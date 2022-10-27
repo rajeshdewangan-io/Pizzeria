@@ -1,0 +1,58 @@
+--------------------------------
+Name:stringstringstringstringstring
+Size:2
+--------------------------------
+Name:paneer tikka
+Size:1
+--------------------------------
+Name:paneer tikka
+Size:1
+--------------------------------
+Name:paneer tikka
+Size:1
+----------Pizza Order Number : 65688----------------------
+Name:asdsads, Type:veg, Size:100, Sauce:Yes, Extra Cheese:asdsads
+----------Pizza Order Number : 818213----------------------
+----------Pizza Order Number : 9902----------------------
+Name:paneer tikka, Type:veg, Size:1, Sauce:1, Extra Cheese:No
+Extra Cheese:No,
+----------Pizza Order Number : 178979----------------------
+Name:paneer tikka, Type:veg, Size:1, Sauce:2, Extra Cheese:Yes
+Toppings:Paneer,Fried Onion,Capsicum
+Name:rerewrew refe, Contact Number:23232432
+Total Amount:488.0
+----------Pizza Order Number : 882101----------------------
+Name:paneer tikka, Type:veg, Size:Small, Sauce:cheese, Extra Cheese:Yes
+Toppings:Capsicum
+Name:Shaun , Contact Number:987564133
+Total Amount:425.0
+----------Pizza Order Number : 234951----------------------
+Name:paneer tikka, Type:veg, Size:Small, Sauce:cheese, Extra Cheese:No
+Toppings:Capsicum
+Name:Sasaa, Contact Number:3432432
+Total Amount:375.0
+----------Pizza Order Number : 593085----------------------
+Name:paneer tikka, Type:veg, Size:Small, Sauce:cheese, Extra Cheese:No
+Toppings:Fried Onion,Green olive
+Name:Shaun asas, Contact Number:234234324
+Total Amount:428.0
+----------Pizza Order Number : 657501----------------------
+Name:paneer tikka, Type:veg, Size:Small, Sauce:cheese, Extra Cheese:No
+Toppings:Fried Onion,Green olive,Capsicum
+Name:sassa asd, Contact Number:34345, Order Date:10/27/2022 10:04:14 PM
+Total Amount:443.0
+----------Pizza Order Number : 96460----------------------
+Name:paneer tikka, Type:veg, Size:Medium, Sauce:cheese, Extra Cheese:No
+Toppings:Fried Onion,Green olive
+Name:Rasas asdasd, Contact Number:13213123, Order Date:10/27/2022 10:42:03 PM
+Total Amount:453.0
+----------Pizza Order Number : 794853----------------------
+Name:paneer tikka, Type:veg, Size:Small, Sauce:cheese, Extra Cheese:Yes
+Toppings:Green olive,Capsicum
+Name:Rasas asdasd, Contact Number:13213123, Order Date:10/27/2022 10:49:20 PM
+Total Amount:475.0
+----------Pizza Order Number : 467263----------------------
+Name:paneer tikka, Type:veg, Size:Medium, Sauce:cheese, Extra Cheese:No
+Toppings:Fried Onion,Green olive,Capsicum
+Name:Rasas asdasd, Contact Number:13213123, Order Date:10/27/2022 10:50:58 PM
+Total Amount:468.0

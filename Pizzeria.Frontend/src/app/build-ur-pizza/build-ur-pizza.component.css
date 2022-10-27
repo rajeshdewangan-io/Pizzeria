@@ -1,0 +1,30 @@
+table {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mat-stroked-button {
+  width: fit-content;
+}
+
+td {
+  text-align: center;
+}
+
+table th {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+}
+
+.mat-raised-button.mat-gold {
+  background-color: #f9aa33;
+  color: white;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

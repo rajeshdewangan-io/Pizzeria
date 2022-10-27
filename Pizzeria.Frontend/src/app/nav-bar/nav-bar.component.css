@@ -1,0 +1,22 @@
+
+  .mat-raised-button.mat-gold
+  {
+      background-color: #F9AA33;
+      color: white;
+  }
+
+  .active {
+    color:  #F9AA33;
+  }
+  .logo-image{
+    width: 55px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: -10pxF;
+}
+
+.fill
+{
+  flex: 1 1 auto;
+}

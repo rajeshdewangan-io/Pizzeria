@@ -1,0 +1,80 @@
+<form [formGroup]="pizzaOrderForm" (ngSubmit)="onSubmit()">
+  <div *ngIf="pizza && true" fxLayout="row wrap">
+    <div fxFlex="0 0 100%" [ngStyle.gt-sm]="{ 'margin.px': 8 }" fxFlex.gt-sm="0 0 calc(100% - 16px)">
+      <mat-card>
+        <mat-grid-list cols="3" rowHeight="2:1">
+          <mat-grid-tile>
+            <mat-icon [style.color]="pizza.type === 'veg' ? 'green' : 'red'">
+              local_pizza</mat-icon>{{ pizza.name | titlecase }}
+          </mat-grid-tile>
+          <mat-grid-tile>
+            {{ pizza.description }}
+          </mat-grid-tile>
+          <mat-grid-tile [colspan]="1" [rowspan]="1"><img [src]="pizza.image" [alt]="pizza.name"
+              style="object-fit: cover; height: inherit; width: inherit;" /></mat-grid-tile>
+          <mat-grid-tile>
+            <mat-form-field>
+              <mat-select (selectionChange)="setTotalPrice()" placeholder="Select Crust Size" formControlName="size"
+                name="pizzaSize">
+                <mat-option *ngFor="let pizzaSize of pizzaSizes" [value]="pizzaSize.id">
+                  {{pizzaSize.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-form-field>
+              <mat-select required (selectionChange)="setTotalPrice()" placeholder="Select Sauce"
+                formControlName="sauce" name="sauce">
+                <mat-option *ngFor="let sauce of pizzaSauces" [value]="sauce.id">
+                  {{sauce.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-form-field>
+              <mat-select required (selectionChange)="setTotalPrice()" placeholder="Extra Cheese"
+                formControlName="extraCheese" name="extraCheese">
+                <mat-option [value]="1">
+                  Yes
+                </mat-option>
+                <mat-option [value]="0">
+                  No
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-form-field>
+              <mat-select required (selectionChange)="setTotalPrice()" placeholder="Select Toppings"
+                formControlName="toppings" name="toppings" multiple>
+                <mat-option *ngFor="let topping of pizzaToppings" [value]="topping.id">
+                  {{topping.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-form-field>
+              <mat-label>Full Name</mat-label>
+              <input required formControlName="customerName" matInput>
+            </mat-form-field>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <mat-form-field>
+              <mat-label>Contact Number</mat-label>
+              <input required formControlName="contactNumber" matInput>
+            </mat-form-field>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card>
+    </div>
+  </div>
+  <mat-toolbar class="position-fixed">
+    <span style=" margin-right: 10px;">Total : {{ totalPrice | currency: "INR" }} </span>
+    <button mat-raised-button color="gold" (click)=" orderPizza()" [disabled]="!pizzaOrderForm.valid">
+      Order
+    </button>
+  </mat-toolbar>
+</form>
