@@ -31,7 +31,7 @@ namespace Pizzeria.Api.Controllers
             return pizza;
         }
 
-        // POST api/values
+        // POST api/pizzeria
         [HttpPost]
         public ActionResult<int> SavePizzaOrder([FromBody] OrderPizza orderPizza)
         {
